@@ -1,0 +1,24 @@
+.table {
+    display: flex;
+    
+}
+div.tabela {
+    display: grid;
+    background-color: #B51D44;
+    height: 200px;
+    width: 100%; 
+    grid-template-columns: auto auto; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+div.tabela .text {
+    justify-self: end; 
+}
+
+div.tabela .icons {
+    justify-self: end; 
+    display: flex;
+    gap: 10px; 
+}

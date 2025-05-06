@@ -1,0 +1,125 @@
+/* A mãe de todos */
+.main_login {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* Banner da  Esquerda: */
+.banner {
+    background-image: url("./../../Assets/Img/Login.svg");
+    flex: 1;
+    background-color: #a11326;
+
+    /* Modificar algumas características da imagem */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Form de Login da direita: */
+.section_login {
+    flex: 1;
+
+    background-color: #ffffff;
+
+
+    /* Centraliza o campo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_login img {
+    width: 200px;
+    height: 80px;
+}
+
+.form_login {
+    color: white;
+
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form_login h1 {
+    /* Vai deixar o titúlo com letra maiúsculas */
+    text-transform: uppercase;
+}
+
+.campo_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+.campos_login {
+    width: 100%;
+}
+
+.campo_input input {
+    height: 30px;
+    padding: 0px 10px;
+
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+
+    
+
+}
+
+/* RESPONSIVIDADE */
+
+/* Me dê  algumas características a partir de um tamanho de tela */
+@media screen and (max-width: 768px) {
+
+    /* 0px -> 768px */
+    .banner {
+        /* Desaparece o banner lateral */
+        display: none;
+    }
+}
+
+.section_login img {
+    width: 293px;
+    height: 51px;
+}
+
+.HR-senha {
+    width: 100%;
+    background-color: #000000;
+    margin: 10px 0px;
+}
+
+.HR-email {
+    width: 100%;
+    background-color: #000000;
+    margin: 10px 0px;
+}
+.esqueceuAsenha{
+    text-decoration: none;
+    color:#b8b8b8;
+    
+    margin-left: 180px;
+    margin-top: 50px;
+    
+
+}@media screen and (max-width: 768px) {
+
+    /* 0px -> 768px */
+    .esqueceuAsenha {
+        /* Desaparece o banner lateral */
+        
+        width: 0px ;
+        margin: 10px 10px 0px;
+    }
+}

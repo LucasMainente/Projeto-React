@@ -1,0 +1,17 @@
+.botao {
+    background-color:#B51D44; /* Cor de fundo do botão */
+    color: white;
+
+    border: none; /* Remove a borda padrão do botão */
+    text-decoration: none;
+    text-align: center;
+
+    width: 350px;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 5px;
+    height: 45px;
+    padding: 10px;
+   
+}
