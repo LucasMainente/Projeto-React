@@ -1,12 +1,12 @@
 import Botao from '../Botao/Botao';
 import Banner from '../../Assets/Img/Tipo-Evento.svg';
 
-function Cadastro() {
+function Cadastro(props) {
   return (
     <section className='layout_grid'>
       <div className="bannertipoEvento"></div>
     <div className="tipo-de-evento">
-      <h1 className='Titulo_Da_Pagina'>Cadastro Tipo de eventos</h1>
+      <h1 className='Titulo_Da_Pagina'>{props.nomeDoCadastro}</h1>
       <hr className='HR_TipoDeEvento'/>
 
       <form action="">

@@ -1,0 +1,87 @@
+
+/* div{
+display: flex;
+flex-direction: column;
+align-items: center;
+} */
+.hr_listagem{
+  width: 100%;
+  margin-top: 25px;
+}
+div thead th td:first-child{
+width: 300px;
+}
+div thead th td:nth-child(2){
+width: 200px;
+}
+div thead th td:nth-child(3){
+width: 200px;
+}
+.select_listagem{
+  height: 40px;
+  width: 270px;
+  margin-right: 510px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #201849;;
+}
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 22px;
+  border-radius: 20px;
+}
+
+.toggle input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-radius: 20px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #201849;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.toggle input:checked + .slider {
+  background-color: #B51D44;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.toggle input:checked + .slider:before {
+  transform: translateX(26px);
+  border-radius: 20px;
+}
+.imagem-hover {
+  /* Estilos normais da imagem */
+  transition: filter 0.3s ease; /* Adicionar uma transição suave para a mudança de cor */
+}
+
+.imagem-hover:hover {
+  background-image: url(./../../Assets/Img/Mensagem\ 1.svg);
+  
+  transition: background-image 0.3s ease;
+  
+}

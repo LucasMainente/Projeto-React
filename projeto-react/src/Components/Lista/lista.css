@@ -1,24 +1,92 @@
-.table {
+.listagem{
+    /*Vamos retirar:
+    header: 75px
+    cadastro: 252px
+    footer: 40px */
+    height: calc(100vh - (75px + 252px +  40px));
+
     display: flex;
-    
-}
-div.tabela {
-    display: grid;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 0;
+
     background-color: #B51D44;
-    height: 200px;
-    width: 100%; 
-    grid-template-columns: auto auto; 
-    align-items: center; 
-    justify-content: space-between;
-    padding: 0 20px;
 }
 
-div.tabela .text {
-    justify-self: end; 
+.listagem h1{
+    text-transform: uppercase;
 }
 
-div.tabela .icons {
-    justify-self: end; 
-    display: flex;
-    gap: 10px; 
+
+
+.item_lista img{
+    height: 28px;
 }
+
+.tabela{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.tabela table{
+    width: 100%;
+
+   
+}
+
+.tabela .table_cabecalho :first-child{
+    width: 300px;
+
+}
+
+.tabela .table_cabecalho :nth-child(2){
+    width: 200px;
+}
+
+.tabela .table_cabecalho th{
+    width: 100px;
+}
+
+.item_lista td{
+    
+    padding: 20px 0 10px 0;
+}
+
+.item_lista{
+    text-align: center;
+
+    border-bottom: solid 1px #34000090;
+}
+
+@media screen and (max-width: 768px) {     
+.tabela thead{
+    display: none;
+}
+
+.item_lista td{
+    display: grid;
+    text-align: left;
+    padding: 10px 10px 10px 0;
+    grid-template-columns: 10ch auto;;
+}
+
+.item_lista td::before{
+    content: attr(data-cell)":";
+    font-weight: 700;
+    width: 80px;
+    text-align: left;
+}
+
+.item_lista td:last-child{
+    margin-bottom: 24px;
+}
+}
+table thead hr{
+    width: 1060px;
+}
+section .linha_da_lista{
+    width: 1060px;
+}
+
+

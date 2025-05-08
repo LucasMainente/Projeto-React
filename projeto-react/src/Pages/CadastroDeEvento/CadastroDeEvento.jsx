@@ -10,15 +10,20 @@ const CadastroDeEvento = () => {
 
         <>
         <Header/>
+        <h1>CADASTRO DE EVENTO</h1>
         <form action="" className='layout_grid'>
         <img src={Banner} alt="" />
         <div className='div_input'>
-        <input className='input_titulo' type="text" placeholder='Titulo'/>
-        <input type="select" placeholder='' />
+        <input required  className='input_titulo' type="text" placeholder='Titulo'/>
+        <select required  name="Tipo de Evento" id="">
+          <option value="">Palestra</option>
+          <option value="">Palestra</option>
+          <option value="">Palestra</option>
+        </select>
         <Botao nomeDoBotao='Cadastrar'/>
         </div>
       </form>
-        <Lista nomeLista='Cadastro De Evento'/>
+        <Lista nomeLista='LISTA DE EVENTO'/>
        
         </>
 

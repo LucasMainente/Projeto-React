@@ -1,6 +1,9 @@
+
 header{
     background-color: #ffffff;
-
+    padding: 10px;
+    display: flex;
+    align-items: center;
     height: 75px;
 
     /* Borda */
@@ -10,6 +13,7 @@ header{
 
 .cabecalho{
     display: flex;
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
 
@@ -40,6 +44,23 @@ header{
 
 .link_header :last-child(1){
     margin-left: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .cabecalho img {
+        height: 25px;
+    }
+
+    .link_header {
+        margin-left: 5px;
+        font-size: 14px;
+    }
 }
 .imagen_saida{
     width: 18px;

@@ -13,3 +13,15 @@ form input {
     padding: 10px;
     margin-bottom: 20px;
 }
+select {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
